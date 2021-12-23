@@ -1,0 +1,263 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.classimage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image{
+    width: 100%;
+    height: 500px;
+}
+
+.bar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    
+    background-color: rgb(41, 40, 40);
+}
+.barpage{
+    color: white;
+}
+ .logo{
+     margin-left:40px;
+     color: white;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+.logo,
+ .barpage {
+     justify-content: space-between;
+     margin-right: 100px;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    text-align: center;
+ }
+ .nav label::before {
+    content: "\f0c9";
+    font-family:"FontAwesome";
+    font-size: 32px;
+    color:#ffffff;
+    cursor: pointer;
+    margin-right: 10px;
+    display: none;
+  
+  }
+  
+  @media(max-width:700px){
+  
+    .barpage {
+    display:none;
+    }
+    .nav label::before {
+      display: block;
+    }
+  
+  }
+
+
+.header{
+    background-image: url('./Background-imqge.jpg');
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+ .image{
+     background-repeat: no-repeat;
+     position: relative;
+ }
+  
+.classimage{
+    position: relative;
+}
+ 
+ .content1{
+     color: white;
+     margin-left: 40px;
+     
+     font-size: 36px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+.content2{
+     color: white;
+     margin-left: 40px;
+     font-size: 26px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ }
+
+ .img-con h3{
+    font-size: 15px;
+    font-weight: 100;
+     color: rgb(0, 0, 0);
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+.offer{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+    
+}
+.path{
+    
+    clip-path: polygon(42% 0, 113% 0, 100% 50%, 100% 100%);
+   
+
+    height: 100px;
+    width: 200px;
+    background-color: rgb(123, 108, 255);
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.offerposetion{
+    margin-left: 130px;
+    margin-top:10px;
+    font-weight: 700;
+    font-size: 30px;
+    color:#ffffff;
+}
+.joinus{
+    background-color:rgb(123, 108, 255);
+    padding:7px 20px;
+    border:none;
+    border-radius: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+.hello{
+    margin-left: 40px;
+}
+
+.download{
+    background-color:rgb(123, 108, 255);
+    padding:7px 20px;
+    border:none;
+    border-radius: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    left: 50%;
+    margin:40px 10px 0px 0px;
+}
+
+.img-con:hover .over{
+ 
+    opacity: 1;
+
+}
+.img-con {
+    width: 400px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.63) 1px 1px 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+}
+.offer img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+ .travel{
+     width: 100%;
+     height: 100%;
+    
+    }
+ /* ------------------------------------------------------- */
+
+.app{
+    margin: 60px;
+   display: flex;
+   height: 500px;
+   justify-content: space-evenly;
+   align-items: center;
+    background-color: antiquewhite;
+
+}
+
+.imageapp{   
+    /* box-shadow: 1px 1px 20px ; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.divclass{
+    width: 500px;
+    height: 300px;
+}
+
+
+.side{
+    margin-top: 50px;
+}
+
+.app h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+}
+
+.app h4,p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.about{
+    margin-top: 130px;
+    text-align: center;
+}
+.aboutus{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.aboutp{
+    font-size: large;
+    font-weight: 300;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.info{
+    margin-top: 150px;
+    display: flex;
+    background-color: black;
+    height: 40px;
+    justify-content: center;
+    font-size: small;
+    color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none ;
+    color: white;
+}
+
+
+

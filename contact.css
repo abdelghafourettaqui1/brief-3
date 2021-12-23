@@ -1,0 +1,117 @@
+body,html{
+  margin: 0;
+  padding: 0;
+}
+.bar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(41, 40, 40);
+}
+.barpage{
+    color: white;
+}
+ .logo{
+     margin-left:40px;
+     color: white;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+.logo,
+ .barpage {
+     justify-content: space-between;
+     margin-right: 100px;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    text-align: center;
+ }
+
+ .nav label::before {
+  content: "\f0c9";
+  font-family:"FontAwesome";
+  font-size: 32px;
+  color:#ffffff;
+  cursor: pointer;
+  margin-right: 10px;
+  display: none;
+
+}
+
+
+@media(max-width:700px){
+
+  .bar nav{
+  display:none;
+  }
+  .nav label::before {
+    display: block;
+  }
+
+}
+
+
+
+
+
+body{
+    background-image: url(./contact\ background.webp);
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+ 
+  input[type=submit] {
+    background-color: #524848;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+  .formbackground {
+    width: 400px;
+    height: 550px;
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(36, 34, 34), rgb(235, 235, 229));
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    color: rgb(250, 250, 250);
+   
+  }
+
+  .info{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: black;
+    height: 40px;
+    justify-content: center;
+    font-size: small;
+    color: rgb(255, 255, 255);
+}
+
+a{
+  text-decoration: none ;
+  color: white;
+}
