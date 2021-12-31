@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <link rel="stylesheet" href="contact.css">
 </head>
-<body >
-    
+
+<body>
+
     <div class="bar">
         <div class=logo>
             <h4>Rent<span style="color: rgb(123, 108, 255);">Me</span>Now</h4>
@@ -17,54 +21,56 @@
         <nav class="barpage">
 
             <a href="index.html">Home</a>
-           <a href="Gallery.html">Gallery</a>
+            <a href="Gallery.html">Gallery</a>
             <a href="booking.html">Booking</a>
-         <a href="contact.html">Contact</a>
+            <a href="contact.html">Contact</a>
 
         </nav>
-        
 
-           <div class="nav">
+
+        <div class="nav">
 
             <label for="navbar"></label>
 
-           </div>
-          
+        </div>
+
     </div>
-    
+
     <!-- ---------------------------------------- -->
     <section class="formbackground">
-        <form >
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name..">
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Email..">
-          <label for="phone">Phone number</label>
-          <input type="text" id="phone" name="phone" placeholder="phone number..">
-          <label for="subject">Message</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-      
-          <input id="submit" type="submit" value="Submit">
-      
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email..">
+            <label for="phone">Phone number</label>
+            <input type="text" id="phone" name="phone" placeholder="phone number..">
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+            <input id="submit" type="submit" value="Submit">
+
         </form>
-    
-    </section> 
-    <footer class="info" >
-        <p>©RentMeNow 2021  Site map | Legal mentions | Cookies, Security and Privacy policy | Contact us</p>
+
+    </section>
+    <footer class="info">
+        <p>©RentMeNow 2021 Site map | Legal mentions | Cookies, Security and Privacy policy | Contact us</p>
     </footer>
     <script>
-        document.querySelector("#submit").addEventListener('click',function(alerett) {
+        document.querySelector("#submit").addEventListener('click', function (alerett) {
             {
                 var n = document.getElementById("name").value;
                 var e = document.getElementById("email").value;
                 var p = document.getElementById("phone").value;
                 var s = document.getElementById("subject").value;
-                alert("Name: "+n+"\n"+"Email: "+e+"\n"+"Phone number :"+p+"\n"+"subject :"+s+"\n");
-            }});
-        
+                alert("Name: " + n + "\n" + "Email: " + e + "\n" + "Phone number :" + p + "\n" + "subject :" + s + "\n");
+            }
+        });
+
     </script>
-    
+
 
 
 </body>
+
 </html>

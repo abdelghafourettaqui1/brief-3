@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <link rel="stylesheet" href="booking.css">
+    <script type="text/javascript" src="booking.js"></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
         </div>
 
     </div>
-    
+
     <div class="image">
         <div class="header">
             <div class="content">
@@ -44,64 +45,57 @@
         <div class="line"></div>
 
         <!-- --------------------------------------------------------------- -->
+
         <div class="parttwo">
-        
-        <section class="formbackground">
-            <form>
-                <label for="type">Type</label>
-                <select id="type" name="type">
-                  <option value="motorcycle">Motorcycle</option>
-                  <option value="citadine">Citadine</option>
-                  <option value="compact">Compact</option>
-                  <option value="berline">Berline</option>
-                  <option value="utilitaire">Utilitaire</option>
-                  <option value="Engin">Engin de Chantier</option>
-                  <option value="camion">Camion</option>
-                </select>
-                <label for="gearbox">Gearbox</label>
-                <select id="gearbox" name="gearbox">
-                  <option value="manual">Motorcycle</option>
-                  <option value="automatic">Automatic</option>
-                </select>
-                <label for="fuel">Fuel</label>
-                <select id="fuel" name="fuel">
-                  <option value="diesel">Diesel</option>
-                  <option value="essence">Essence</option>
-                  <option value="hybride">Hybride</option>
-                  <option value="electric">Electric</option>
-                </select>
-                <label for="day">Day number</label>
-                <input type="text" id="day" name="day" placeholder="Day number..">
-              
-                <label for="calcul">Price</label>
-                <input type="text" id="culcul" name="calcul" placeholder="The price is..">
 
-              <input id="price" type="price" value="Price">
-          
-            </form>
-        </section> 
+            <section class="formbackground">
+                <form>
+                    <label for="type">Type</label>
+                    <select id="type" name="type" onchange="vehicule()">
+                        <option id="nonetype" value="none">None</option>
+                        <option id="motorcycle" value="Motorcycle">Motorcycle</option>
+                        <option id="citadine" value="Citadine">Citadine</option>
+                        <option id="compact" value="Compact">Compact</option>
+                        <option id="berline" value="Berline">Berline</option>
+                        <option id="utilitaire" value="Utilitaire">Utilitaire</option>
+                        <option id="engin" value="Engin de Chantier">Engin de Chantier</option>
+                        <option id="camoin" value="Camion">Camion</option>
+                    </select>
+                    <label for="gearbox">Gearbox</label>
+                    <select id="gearbox" name="gearbox" onchange="gearbox2()"> </select>
+                    <!-- <option id="nonegearbox" value="none">None</option>
+                        <option id="manual" value="manual">Manual</option>
+                        <option id="automatic" value="automatic">Automatic</option> -->
 
-    </div>
-    <div class="line"></div>
+                    <label for="fuel">Fuel</label>
+                    <select id="fuel" name="fuel" onchange="fuel2()">
+                        <!-- <option id="nonefuel" value="none">None</option>
+                        <option id="diesel" value="diesel">Diesel</option>
+                        <option id="essence" value="essence">Essence</option>
+                        <option id="hybride" value="hybride">Hybride</option>
+                        <option id="electric" value="electric">Electric</option> -->
+                    </select>
+                    <div style="display: flex; flex-direction: column;">
+                        <label for="day">Day number</label>
+                        <input type="number" id="day" name="day" placeholder="Day number..">
+                    </div>
 
+                    <div class="price">
+                        <input type="submit"  id="price" value="Price"  onclick="vehiculePrice()">
+                    </div>
 
-    <!------------------------------------------------------------------------------------------------------------>
+                </form>
+            </section>
 
-    <footer class="info">
-        <p>©RentMeNow 2021 Site map | Legal mentions | Cookies, Security and Privacy policy | Contact us</p>
-    </footer>
-    <script>
-        document.querySelector("#submit").addEventListener('click', function (alerett) {
-            {
-                var n = document.getElementById("name").value;
-                var e = document.getElementById("email").value;
-                var p = document.getElementById("phone").value;
-                var s = document.getElementById("subject").value;
-                alert("Name: " + n + "\n" + "Email: " + e + "\n" + "Phone number :" + p + "\n" + "subject :" + s + "\n");
-            }
-        });
+        </div>
+        <div class="line"></div>
+        <!------------------------------------------------------------------------------------------------------------>
 
-    </script>
+        <footer class="info">
+            <p>©RentMeNow 2021 Site map | Legal mentions | Cookies, Security and Privacy policy | Contact us</p>
+        </footer>
+
+   
 
 
 
