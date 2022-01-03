@@ -2,6 +2,9 @@ body,html{
     margin: 0;
     padding: 0;
   }
+  .hovering{
+    color:rgb(123, 108, 255);
+    }
   .bar{
       height: 40px;
       width: 100%;

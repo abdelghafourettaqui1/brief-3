@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
 }
+.hoveri {
+    color:rgb(123, 108, 255);
+  }
 a{
     text-decoration: none ;
     color: white;

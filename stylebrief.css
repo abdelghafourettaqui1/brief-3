@@ -2,7 +2,9 @@ html,body{
     margin: 0px;
     padding: 0px;
 }
-
+.hovering{
+    color:rgb(123, 108, 255);
+    }
 .classimage{
     width: 100%;
     height: 100%;

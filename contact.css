@@ -2,6 +2,9 @@ body,html{
   margin: 0;
   padding: 0;
 }
+.hovering{
+color:rgb(123, 108, 255);
+}
 .bar{
     height: 40px;
     width: 100%;
@@ -56,8 +59,10 @@ body,html{
 
 body{
     background-image: url(./contact\ background.webp);
+    background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
+ 
 }
 
 
@@ -87,7 +92,9 @@ input[type=text], select, textarea {
     background-color:rgb(123, 108, 255);
   }
   
-
+.container{
+  height: 100vh;
+}
   .formbackground {
     width: 400px;
     height: 550px;
